@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pbo3.pkg10117089.latihan25.ejaannama;
+package pbo3.pkg10117089.latihan27.hurufbesarkecil;
 
 import java.util.Scanner;
 
@@ -14,32 +14,37 @@ import java.util.Scanner;
  * Kelas    : PBO3
  * NIM      : 10117089
  * Deskripsi Program  : Program ini berisi program untuk menampilkan 
- * ejaan nama user
+ * huruf yang sudah diganti ke besar dan kecil
  */
-public class PBO310117089Latihan25EjaanNama {
+public class PBO310117089Latihan27HurufBesarKecil {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        String nama;
         
         
-        //scanner
+
+        
         Scanner keyboard = new Scanner(System.in);
         
-        //Tampilan output
-        System.out.print("Masukkan nama depan anda untuk di eja : ");
-        nama = keyboard.next();
+        String kalimat;
         
-        int len = nama.length();
-        char[] arrChar = new char[len];
-
-        for (int no=0; no <= len-1; no++){
-        arrChar[no] = nama.charAt(no);
-        System.out.println("Huruf ke- "+(no+1)+" : "+ arrChar[no]);
-        }
+        System.out.print("Masukkan Kalimat : ");
+        kalimat = keyboard.nextLine();
+ 
+        String kalimat1 = kalimat.toUpperCase();
+        String kalimat2 = kalimat.toLowerCase();
+        
+        System.out.println("=======Hasil Formatting=========");
+        System.out.println("Huruf Besar : " + kalimat1 );
+        System.out.println("Huruf Kecil : " + kalimat2);
+        
+        
+        
     }
+
+
     
 }

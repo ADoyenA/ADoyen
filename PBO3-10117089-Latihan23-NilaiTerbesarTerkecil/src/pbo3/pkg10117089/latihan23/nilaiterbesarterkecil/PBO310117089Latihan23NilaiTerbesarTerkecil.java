@@ -44,16 +44,18 @@ public class PBO310117089Latihan23NilaiTerbesarTerkecil {
         }
         max = 0;
         min = 1000;
+        
         System.out.println("\n"+"=========Hasil Nilai Mahasiswa=========");
         for (no=1; no<=nilai[no];no++){
-        if (nilai[no]>max){
-            max = nilai[no];
+        if (nilai[no]<min){
+            min = nilai[no];
         }
-        else if (nilai[no]<min){
-            min= nilai[no];
+        else if (nilai[no]>max){
+            max= nilai[no];
         }
         System.out.print("Nilai Mahasiswa ke- "+no+" : "+nilai[no]+"\n");
         }
+        
         System.out.println("\n"+"Nilai Terbesar adalah "+max);
         System.out.println("Nilai Terkecil adalah "+min+"\n");
         System.out.println("Petugas "+namaPtgs+"\n");
