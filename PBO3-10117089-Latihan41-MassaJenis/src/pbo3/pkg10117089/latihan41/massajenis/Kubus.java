@@ -35,6 +35,6 @@ public class Kubus {
     }
     
     public int hitungMassaJenis (int parMassa, int volume){
-        return volume/parMassa;
+        return parMassa/volume;
     }
 }
